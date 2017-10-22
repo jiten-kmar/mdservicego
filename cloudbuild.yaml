@@ -1,8 +1,8 @@
 steps:
   - name: "gcr.io/cloud-builders/go"
-    args: ["install", "github.com/skim1420/mdservice"]
-    env: ["PROJECT_ROOT=github.com/skim1420/mdservice"]
+    args: ["install", "github.com/jitender1278/mdservicego"]
+    env: ["PROJECT_ROOT=github.com/jitender1278/mdservicego"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "us.gcr.io/spinnaker-1022/mdservice:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "us.gcr.io/bbb-feo-77124/mdservicego:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "us.gcr.io/spinnaker-1022/mdservice:$REVISION_ID"
+  - "us.gcr.io/bbb-feo-77124/mdservicego:$REVISION_ID"
