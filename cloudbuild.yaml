@@ -6,3 +6,4 @@ steps:
     args: ["build", "-t", "us.gcr.io/bbb-feo-77124/mdservice:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
   - "us.gcr.io/bbb-feo-77124/mdservice:$REVISION_ID"
+  
